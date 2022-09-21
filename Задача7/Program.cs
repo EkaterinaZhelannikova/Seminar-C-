@@ -10,11 +10,11 @@ int number1 = int.Parse(Console.ReadLine());
 Console.Write("Введите второе число: ");
 int number2 = int.Parse(Console.ReadLine());
 
-if (number1 % number2 == 0)
+if (number2 % number1 == 0)
 {
-    Console.Write($"{number1} кратно {number2}");
+    Console.Write($"{number2} кратно {number1}");
 }
 else 
 {
-    Console.Write($"не кратно, остаток {number1 % number2}");
+    Console.Write($"не кратно, остаток {number2 % number1}");
 }
