@@ -10,7 +10,7 @@ int firstDigit = number % 10;
 int lastDigit = number / 10;
 
 //Если число last двойное
-//int lastDigit = number / 10 % 10;
+//int secondDigit = number / 10 % 10;
 //int thirdDigit = number /100;
 
 if (firstDigit > lastDigit)
