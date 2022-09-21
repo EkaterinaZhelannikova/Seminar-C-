@@ -8,8 +8,7 @@ Console.Write("Введите второе число: ");
 string input2 = Console.ReadLine();
 int number2 = int.Parse(input2);
 
-int sqr = number2 * number2;
-if(number1 == sqr)
+if(number1 == number2 * number2)
 {
     Console.WriteLine("Первое число является квадратом второго числа");
 }
