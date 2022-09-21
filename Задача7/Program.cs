@@ -10,12 +10,7 @@ int number1 = int.Parse(Console.ReadLine());
 Console.Write("Введите второе число: ");
 int number2 = int.Parse(Console.ReadLine());
 
-if (number1 < number2)
-{
-    Console.Write("Первое число должно быть больше второго!");
-}
-
-else if (number1 % number2 == 0)
+if (number1 % number2 == 0)
 {
     Console.Write($"{number1} кратно {number2}");
 }
