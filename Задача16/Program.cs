@@ -3,6 +3,7 @@
 //-3; массив [6,7,19,345,-3] -> да
 
 Console.Clear();
+
 Console.Write("Введите число: ");
 int num = int.Parse(Console.ReadLine()!);
 
