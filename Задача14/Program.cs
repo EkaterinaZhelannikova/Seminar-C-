@@ -4,7 +4,7 @@
 
 Console.Clear();
 
-Console.Write("Введите число: ");
+Console.Write("Введите размер массива: ");
 int arrayLength = int.Parse(Console.ReadLine()!);
 
 int[] array = new int[arrayLength];
