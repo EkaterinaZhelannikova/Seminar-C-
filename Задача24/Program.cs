@@ -9,14 +9,8 @@ Console.Write($"Введите число: ");
 int num = int.Parse(Console.ReadLine()!);
 Console.WriteLine($"В числе {num} число знаков равно {CountDigits(num)}");
 
-int CountDigits(int number, int counter = 1)
+int CountDigits(int num)
 {
-    if (number / 10 == 0)
-    {
-        return counter;
-    }
-    else
-    {
-        return counter + CountDigits(number / 10);
-    }
+    if (num / 10 < 1) return 1;
+    else return 1 + CountDigits(num / 10);
 }
