@@ -12,7 +12,7 @@ int RecSum (int number)
 {
     if (number > 1)
     {
-        return number + RecSum(--number) ;
+        return number + RecSum(number - 1) ;
     }
     else
     {
