@@ -6,6 +6,7 @@ Console.Clear();
 int[] doubleNum = {0, 1, 1, 1, 1};
 Array.Reverse(doubleNum);
 double result = 0;
+PrintArray(doubleNum);
 
 for (int i = 0; i < doubleNum.Length; i++)
 {
@@ -13,18 +14,21 @@ for (int i = 0; i < doubleNum.Length; i++)
 }
 Console.WriteLine(result);
 
-// int[] arrayData = { 0, 1, 1, 1, 1, 0, 0, 0, 1 };
-// int[] arrayInfo = { 2, 3, 3, 1 };
-
-// for (int i = 0; i < arrayInfo.Length; i++)
-// {
-//     int decNum = 0;
-//     for (int j = 0; j < arrayInfo[i]; j++)
-//     {
-//         arrayData[j] = arrayData[j] * (int)Math.Pow(2, arrayData.Length - i - 1);
-//         decNum += arrayData[i];
-//     }
-//     Console.Write($"{decNum} ");
-
-// }
-
+void PrintArray (int[] doubleNum)
+{
+    int count = doubleNum.Length;
+    Console.Write("[");
+    for (int i = 0; i < count; i++)
+    {
+        Console.Write(doubleNum[i]);
+        if (i == count - 1)
+        {
+            Console.Write("]");
+        }
+        else
+        {
+            Console.Write(", ");
+        }
+    }
+    Console.WriteLine();
+}
