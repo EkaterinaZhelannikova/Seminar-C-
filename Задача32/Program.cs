@@ -4,9 +4,9 @@
 Console.Clear();
 
 Console.WriteLine("Введите число строк массива");
-int m = int.Parse(Console.ReadLine());
+int m = int.Parse(Console.ReadLine()!);
 Console.WriteLine("Введите число столбцов  массива");
-int n = int.Parse(Console.ReadLine());
+int n = int.Parse(Console.ReadLine()!);
 int[,] array = new int[m, n];
 FillArray(array);
 PrintArray(array);
